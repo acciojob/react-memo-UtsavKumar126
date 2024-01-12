@@ -14,18 +14,18 @@ const App=()=>{
         setItem("");
     }
     return(
-        <div>
+        <div id="main">
             <h1>My todos</h1>
             <div>{todo}</div>
-            <button id="add-todo" onClick={()=>setTodo("New todo")}>Add Todo</button>
+            <button id="add-todo-btn" onClick={()=>setTodo("New todo")}>Add Todo</button>
             <hr/>
             <div>Count: {count}
-                <button id="increment" onClick={()=>setCount(count+1)}>+</button>
+                <button id="incr-cnt" onClick={()=>setCount(count+1)}>+</button>
             </div>
             <hr/>
             <hr/>
             <form onSubmit={addToList}>
-                <input placeholder="Add Skill" onChange={(e)=>setItem(e.target.value)} value={item}/>
+                <input placeholder="Add Skill" onChange={(e)=>setItem(e.target.value) } id="skill-input" value={item}/>
                 <button>Add Skill</button>
             </form>
             <ul>
