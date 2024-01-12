@@ -16,17 +16,16 @@ const App=()=>{
     return(
         <div id="main">
             <h1>My todos</h1>
-            <div>{todo}</div>
+            <div id="todo-0">{todo}</div>
             <button id="add-todo-btn" onClick={()=>setTodo("New todo")}>Add Todo</button>
             <hr/>
-            <div>Count: {count}
-                <button id="incr-cnt" onClick={()=>setCount(count+1)}>+</button>
-            </div>
+            <div>Count: {count}</div>
+            <button id="incr-cnt" onClick={()=>setCount(count+1)}>+</button>
             <hr/>
             <hr/>
             <form onSubmit={addToList}>
                 <input placeholder="Add Skill" onChange={(e)=>setItem(e.target.value) } id="skill-input" value={item}/>
-                <button>Add Skill</button>
+                <button id="skill-btn">Add Skill</button>
             </form>
             <ul>
                 {
