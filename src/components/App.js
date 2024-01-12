@@ -21,6 +21,8 @@ const App=()=>{
             <hr/>
             <div id="incr-cnt">Count: {count}</div>
             <button onClick={()=>setCount(count+1)}>+</button>
+            <h3 id="calc">Expensive Calculation</h3>
+            <p>1000000000</p>
             <hr/>
             <hr/>
             <form onSubmit={addToList}>
