@@ -17,10 +17,10 @@ const App=()=>{
         <div id="main">
             <h1>My todos</h1>
             <div id="todo-0">{todo}</div>
-            <button id="add-todo-btn" onClick={()=>setTodo("New todo")}>Add Todo</button>
+            <button id="add-todo-btn" onClick={()=>setTodo("New Todo")}>Add Todo</button>
             <hr/>
-            <div>Count: {count}</div>
-            <button id="incr-cnt" onClick={()=>setCount(count+1)}>+</button>
+            <div id="incr-cnt">Count: {count}</div>
+            <button onClick={()=>setCount(count+1)}>+</button>
             <hr/>
             <hr/>
             <form onSubmit={addToList}>
@@ -30,7 +30,7 @@ const App=()=>{
             <ul>
                 {
                     list.map((ele,i)=>
-                    <li key={i}>{ele}</li>
+                    <li id="item-jumbotron" key={i}>{ele}</li>
                     )
                 }
             </ul>
