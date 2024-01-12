@@ -20,7 +20,7 @@ const App=()=>{
             <button id="add-todo-btn" onClick={()=>setTodo("New Todo")}>Add Todo</button>
             <hr/>
             <div id="incr-cnt">Count: {count}</div>
-            <button onClick={()=>setCount(count+1)}>+</button>
+            <button onClick={()=>setCount(count+1)} id="#incr-btn">+</button>
             <h3 >Expensive Calculation</h3>
             <p id="calc">1000000000</p>
             <hr/>
